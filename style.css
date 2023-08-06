@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 
 a, a:hover{
@@ -28,22 +29,21 @@ section{
 
 .header{
   width: 100%;
-  background-color:aqua;
   position: absolute;
 }
 
 .header .nav-bar{
-    background-color:aqua;
-  position: fixed;
+  background-color:#ac9ffd;
+  position:fixed;
   bottom: 0rem;
   width: 100%;
   height: 80px;
   line-height: 80px;
   margin: auto;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid #fff;
+  color: #000;
+  display:flex;
+  justify-content:center;
+
 }
 
 .header .nav-bar .logo{
@@ -66,11 +66,11 @@ section{
 
 video {
     position:absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 95%;
+    object-fit:fill;
 }
 
 .header .nav-bar .menu ul li a{
