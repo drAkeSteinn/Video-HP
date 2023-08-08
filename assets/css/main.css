@@ -38,7 +38,7 @@ video {
     top: 0px;
     left: 0;
     width: 100%;
-    height: 95%;
+    height: 92%;
     object-fit:fill;
 }
 
@@ -104,7 +104,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #ac9ffd;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -149,7 +149,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #000;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -184,7 +184,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -198,7 +198,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 1px #000;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -1250,8 +1250,6 @@ input, select, textarea {
 		z-index: 2;
 		display: -moz-flex;
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
@@ -1264,12 +1262,17 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
-		text-align: center;
+		background-color:#ac9ffd;
+        position: fixed;
+        bottom: 0rem;
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        margin: auto;
+        color: #000;
+        display: flex;
+        justify-content:space-between;
 	}
 
 		#header > * {
@@ -1353,13 +1356,12 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
-			border-radius: 4px;
+			border-radius: 0px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 1px #000000;
 			}
 
 				#header nav ul li:first-child {
@@ -1367,14 +1369,14 @@ input, select, textarea {
 				}
 
 				#header nav ul li a {
-					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
+
+					min-width: 8.25rem;
+					height: 10.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 5.25rem 0 5.25rem;
 					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					letter-spacing: 0.4rem;
+					font-size: 2rem;
 					border-bottom: 0;
 				}
 
@@ -1385,21 +1387,6 @@ input, select, textarea {
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
-
-		#header nav.use-middle:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: calc(50% - 1px);
-			width: 1px;
-			height: 100%;
-			background: #ffffff;
-		}
-
-		#header nav.use-middle ul li.is-middle {
-			border-left: 0;
-		}
 
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
@@ -1556,7 +1543,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: rgba(172, 159, 253, 0.98);
 			border-radius: 4px;
 			opacity: 0;
 		}
