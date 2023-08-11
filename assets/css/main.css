@@ -694,7 +694,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2rem 0;
-			width: 100%;
+			width: 0%;
 		}
 
 			.image.fit img {
@@ -706,19 +706,51 @@ input, select, textarea {
 			margin: 2.5rem 0;
 			width: 100%;
 		}
-
-		.image.blundle {
-			margin-top: 6px;
+		.image.main img {
+			width: 100%;
 		}
 
-			.image.main img {
-				width: 100%;
+		.image.bnd {
+			margin-top: 6px;
+			animation-name: flo;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			position: relative;
+		}
+		.image.bnd:hover {
+			margin-top: 6px;
+			animation-name: flo2;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			position: relative;
+		}
+		@keyframes flo{
+			50%{
+				transform: translateX(30px);
+				opacity: 0.9;
 			}
+		}
+		@keyframes flo2{
+			50%{
+				scale: 1.1;
+			}
+		}
+
+		.image.main2 {
+			margin-top: 6%;
+		}
+		.image.main2:hover {
+			margin-top: 6%;
+			animation-name: flo2;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			position: relative;
+		}
 
 		@media screen and (max-width: 736px) {
 
 			.image.main {
-				margin: 2rem 0;
+				margin: 1.5rem 0;
 			}
 
 		}
