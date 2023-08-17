@@ -737,10 +737,10 @@ input, select, textarea {
 		}
 
 		.image.main2 {
-			margin-top: 12%;
+			margin-top: 8%;
 		}
 		.image.main2:hover {
-			margin-top: 12%;
+			margin-top: 8%;
 			animation-name: flo2;
 			animation-duration: 1s;
 			animation-iteration-count: infinite;
@@ -1359,7 +1359,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		max-width: 100%;
-		background-color:#ac9ffd;
+		background-color:#dad1fd;
         position: fixed;
         bottom: 0rem;
         width: 100%;

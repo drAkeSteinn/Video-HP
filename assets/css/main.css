@@ -737,10 +737,10 @@ input, select, textarea {
 		}
 
 		.image.main2 {
-			margin-top: 6%;
+			margin-top: 3%;
 		}
 		.image.main2:hover {
-			margin-top: 6%;
+			margin-top: 3%;
 			animation-name: flo2;
 			animation-duration: 1s;
 			animation-iteration-count: infinite;
