@@ -1,7 +1,7 @@
 let slide_data = [
 	{
 	  'src':'https://images.unsplash.com/photo-1506765336936-bb05e7e06295?ixlib=rb-0.3.5&s=d40582dbbbb66c7e0812854374194c2e&auto=format&fit=crop&w=1050&q=80',
-	  'title':'Slide 1',
+	  'title':'BackPack',
 	  'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
 	},
 	{
