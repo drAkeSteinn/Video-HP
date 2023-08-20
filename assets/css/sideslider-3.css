@@ -1,0 +1,123 @@
+/* https://codepen.io/aija/pen/xvXWoK */
+
+.wrapper2 {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .carousel {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	justify-content: top;
+	flex-direction: column;
+  }
+  
+  .carousel__item {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	opacity: 1;
+	will-change: transform, opacity;
+	/* ANIMATION CARUSEL */
+	-webkit-animation: carousel-animate-vertical 30s linear infinite;
+	animation: carousel-animate-vertical 30s linear infinite;
+  }
+    
+  .carousel__item-body {
+	width: 100%;
+	height: 88vh;
+	background-color:#dad1fd;
+	padding: 0px 10px 0px 10px;
+  }
+  
+  .title {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: 10px;
+  }
+
+  .carousel__item:nth-child(1) {
+	-webkit-animation-delay: calc(10s * -1);
+			animation-delay: calc(10s * -1);
+  }
+  
+  .carousel__item:nth-child(2) {
+	-webkit-animation-delay: calc(10s * 0);
+			animation-delay: calc(10s * 0);
+  }
+  
+  .carousel__item:last-child {
+	-webkit-animation-delay: calc(-10s * 2);
+			animation-delay: calc(-10s * 2);
+  }
+
+  @-webkit-keyframes carousel-animate-vertical {
+	0% {
+	  transform: translateY(100%) scale(1);
+	  opacity: 0;
+	  visibility: hidden;
+	}
+	2%, 33.3333333333% {
+	  transform: translateY(100%) scale(1);
+	  opacity: 0.4;
+	  visibility: visible;
+	}
+	35.3333333333%, 66.6666666667% {
+	  transform: translateY(0) scale(1);
+	  opacity: 1;
+	  visibility: visible;
+	}
+	68.6666666667%, 100% {
+	  transform: translateY(-100%) scale(1);
+	  opacity: 0.4;
+	  visibility: visible;
+	}
+	102% {
+	  transform: translateY(-100%) scale(1);
+	  opacity: 0;
+	  visibility: visible;
+	}
+	100% {
+	  transform: translateY(-100%) scale(1);
+	  opacity: 0;
+	  visibility: hidden;
+	}
+  }
+  
+  @keyframes carousel-animate-vertical {
+	0% {
+	  transform: translateY(100%) scale(1);
+	  opacity: 0;
+	  visibility: hidden;
+	}
+	2%, 33.3333333333% {
+	  transform: translateY(100%) scale(1);
+	  opacity: 0.4;
+	  visibility: visible;
+	}
+	35.3333333333%, 66.6666666667% {
+	  transform: translateY(0) scale(1);
+	  opacity: 1;
+	  visibility: visible;
+	}
+	68.6666666667%, 100% {
+	  transform: translateY(-100%) scale(1);
+	  opacity: 0.4;
+	  visibility: visible;
+	}
+	102% {
+	  transform: translateY(-100%) scale(1);
+	  opacity: 0;
+	  visibility: visible;
+	}
+	100% {
+	  transform: translateY(-100%) scale(1);
+	  opacity: 0;
+	  visibility: hidden;
+	}
+  }
