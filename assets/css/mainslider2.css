@@ -106,7 +106,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ac9ffd;
+		background: #c2b2fb;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -217,15 +217,24 @@ input, select, textarea {
 		line-height: 1.4;
 		font-family: "FormaDJRDisplay" !important;
 	}
-	h2.slider {
-		padding-top: 0.5rem;
+
+	h2.slidert {
+		padding-top: .5rem;
 		font-size: 1.8rem;
+		line-height: 1.4;
 		font-family: "FormaDJRDisplay" !important;
 		margin: 0 0 -0.7rem 0;
 	}
 
 	h3 {
 		font-size: 1rem;
+	}
+
+	h3.slidert {
+		font-size: 1rem;
+		line-height: 1.4;
+		font-family: "FormaDJRDisplay" !important;
+
 	}
 
 	h4 {
@@ -741,7 +750,7 @@ input, select, textarea {
 /* Scrollbar End */ 
 
 .main-menu {
-	background:#ac9ffd;
+
 	position:fixed;
 	height:87%;
 	right:0;
@@ -753,6 +762,7 @@ input, select, textarea {
 	transition:width .2s linear;
 	-webkit-transform:translateZ(0) scale(1,1);
 	opacity:1;
+	z-index: 2;
   }
   
   .main-menu:hover, nav.main-menu.expanded {
@@ -918,7 +928,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		max-width: 100%;
-		background-color:#dad1fd;
+		background-color:#dbd4ff;
 		position: fixed;
 		bottom: 0rem;
 		width: 100%;
