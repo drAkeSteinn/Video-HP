@@ -494,13 +494,7 @@ input, select, textarea {
 
 		.image.mainstatic {
 			margin-top: 1.2rem;
-			padding: 0 2.25rem 0;
-			text-transform: uppercase;
-			letter-spacing: 0.4rem;
-			font-size: 0.8rem;
-			border-bottom: 0;
-
-			
+			padding: 0 0 0 2.5rem;	
 		}
 		/*.image.mainstatic:hover {
 			margin-top: 1.2rem;
@@ -1283,9 +1277,8 @@ input, select, textarea {
 
 ul > li {
 	z-index: 5;
-	display:block;
 	list-style-type: none;
-	position: absolute;
+	position:fixed;
 	opacity: 0;
 	transition: 1s opacity;
 }
