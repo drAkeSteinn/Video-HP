@@ -449,11 +449,12 @@ input, select, textarea {
 		.image.mainside {
 			display: block;
 			margin: 1rem 0;
-			width: 100%;
+			height: 100%;
 			animation-name: flo2;
 			animation-duration: 1s;
 			animation-iteration-count: infinite;
-			position: relative;
+			position:relative;
+			padding: 0px 20% 0px 20%;
 		}
 		.image.mainside img {
 			width: 100%;
@@ -462,6 +463,7 @@ input, select, textarea {
 			display: block;
 			margin: 1rem 0;
 			width: 100%;
+			padding: 0px 20% 0px 20%;
 		}
 		.image.mainsidetec img {
 			width: 100%;
@@ -488,7 +490,7 @@ input, select, textarea {
 		}
 		@keyframes flo2{
 			50%{
-				scale: 1.1;
+				scale: 0.9;
 			}
 		}
 
